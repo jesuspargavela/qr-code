@@ -14,9 +14,9 @@ body,
 
 body {
   background-color: hsl(212, 45%, 89%);
-  font-size: 15px;
+  font-size: 0.9375rem; /* 15px / 16px = 0.9375rem, scales relative to root font size */
   font-family: "Outfit", sans-serif;
-  font-weight: 400, 700;
+  font-weight: 400;
 }
 
 p {
@@ -39,12 +39,15 @@ p {
   margin-top: 8%;
   padding: 0.7rem;
   background-color: hsl(0, 0%, 100%);
-  width: 20%;
+  max-width: 20%; /* Limits max width on large screens */
+  width: 90%; /* Allows container to shrink on small screens */
+  margin-left: auto; /* Centers container horizontally */
+  margin-right: auto; /* Centers container horizontally */
 }
 
 .image-container img {
   margin-bottom: 0.8rem;
-  max-width: 100%;
-  width: 300px;
+  max-width: 100%; /* ensures image never exceeds container width */
+  width: 100%; /* makes image scale down with container */
   height: auto;
 }
