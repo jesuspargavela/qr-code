@@ -19,18 +19,32 @@ body {
   font-weight: 400, 700;
 }
 
+p {
+  margin-top: 0.8rem;
+  color: hsl(216, 15%, 48%);
+}
+
+h2,
+p {
+  text-align: center;
+  width: 90%;
+}
+
 .container,
 .image-container img {
   border-radius: 10px;
 }
 
 .container {
-  margin-top: 15%;
+  margin-top: 8%;
+  padding: 0.7rem;
   background-color: hsl(0, 0%, 100%);
+  width: 20%;
 }
 
 .image-container img {
+  margin-bottom: 0.8rem;
   max-width: 100%;
-  width: 280px;
+  width: 300px;
   height: auto;
 }
